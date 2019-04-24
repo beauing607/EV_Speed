@@ -1,6 +1,6 @@
 volatile unsigned long t1;//newest time volatile so it can be changed during ISR unsigned long because micros function type
 unsigned long t2 = 0;//older time to be compared to 
-volatile int rev = 0;//ISR int counter so only non zero values of speed print
+volatile int rev = 0;//ISR int counter so only non zero values of speed are calculated
 unsigned long mph = 0;//Final output
 int interruptPin = 2;//pin declaration
 unsigned long circIn = 0;//circumference in inches
